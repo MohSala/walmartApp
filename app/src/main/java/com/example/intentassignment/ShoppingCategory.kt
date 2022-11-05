@@ -1,5 +1,6 @@
 package com.example.intentassignment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,8 +18,9 @@ class ShoppingCategory : AppCompatActivity() {
     }
 
     fun clickElectronics(view: View) {
-
-        Toast.makeText(this, "You have chosen the ${findViewById<TextView>(R.id.electronics).text} category of shopping", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, MainActivity2::class.java)
+        startActivity(intent)
+        //Toast.makeText(this, "You have chosen the ${findViewById<TextView>(R.id.electronics).text} category of shopping", Toast.LENGTH_LONG).show()
 
     }
 

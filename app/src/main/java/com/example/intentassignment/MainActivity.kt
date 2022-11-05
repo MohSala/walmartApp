@@ -6,12 +6,20 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
     }
 
     val user1: User = User("First","Last", "first@gmail.com", "123456")
@@ -42,4 +50,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("emailAddress", email)
         startActivity(intent)
     }
+
+
+
 }
